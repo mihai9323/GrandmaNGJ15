@@ -4,6 +4,9 @@ using System.Collections;
 public class WorldObject : MonoBehaviour {
 	
 	public Lane lane;
+	
+	public float chance = 1;
+	
 	void Start(){
 		World.REFRESH += Move;
 	}
