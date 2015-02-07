@@ -66,6 +66,11 @@ public class World : MonoBehaviour {
 			s_Instance.acceleration = Mathf.Clamp(value,s_Instance.minAcc,s_Instance.maxAcc);
 		}
 	}
+	public static float MaxSpeed{
+		get{
+			return s_Instance.maxSpeed;
+		}
+	}
 	
 	private void Awake(){
 		s_Instance = this;
