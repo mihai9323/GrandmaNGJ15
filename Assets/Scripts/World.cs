@@ -79,7 +79,7 @@ public class World : MonoBehaviour {
 	public static bool Frenzy{
 		set{
 			s_Instance.frenzy = value;
-			if(value)frenzyTimer = Time.time;
+			if(value)s_Instance.frenzyTimer = Time.time;
 		}
 		get{
 			return s_Instance.frenzy;
