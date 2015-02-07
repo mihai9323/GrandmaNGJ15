@@ -42,6 +42,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400016}
+  - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -291,12 +292,12 @@ MonoBehaviour:
   movementSpeed: 3
   generationDistance: 210
   bend: {x: 2.59662557, y: 3.84965563, z: 6.9652853, w: 0}
-  maxSpeed: 0
+  maxSpeed: 20
   acceleration: 0
-  minX: 0
-  maxX: 0
-  minAcc: 0
-  maxAcc: 0
+  minX: -1.39999998
+  maxX: 1.39999998
+  minAcc: -1
+  maxAcc: 5
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -403,6 +404,17 @@ MonoBehaviour:
   angle: 112
   radius: 20
   Z: 30
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d69ed0d9c8248d4784e3e5d3350cdae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
