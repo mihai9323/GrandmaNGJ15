@@ -244,7 +244,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
+  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
+  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
+  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -317,7 +320,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
+  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
+  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
+  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -368,7 +374,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
+  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
+  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
+  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
