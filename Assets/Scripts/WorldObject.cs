@@ -15,6 +15,10 @@ public class WorldObject : MonoBehaviour {
 		if(transform.position.z<0){
 			lane.SpawnObject(this);
 		}
+		Bend ();
+	}
+	void Bend(){
+		renderer.material.SetVector("_QOffset", World.Bend);
 	}
 	
 	
