@@ -86,20 +86,49 @@ public class World : MonoBehaviour {
 			return s_Instance.frenzy;
 		}
 	}
+
+	public static bool StartGame{
+		set{
+			if(value != s_Instance.startGame && value){
+				s_Instance.StartCoroutine(s_Instance.ChangeSound());
+			}
+			s_Instance.startGame = value;
+		}
+		get{
+			return s_Instance.startGame;
+		}
+	}
+	public AudioSource introMusic;
+	public AudioSource themeMusic;
 	private bool frenzy;
 	private float frenzyTimer;
+
+	private bool startGame = false;
 	
 	private void Awake(){
 		s_Instance = this;
 	}
 	private void Start(){
 		StartCoroutine(Refresh());
+		introMusic.Play ();
 	}
-	
+	private IEnumerator ChangeSound(){
+		float c = 0;
+		themeMusic.Play();
+		while (c<1) {
+			c+= Time.deltaTime * .2f;
+			introMusic.volume = Mathf.Lerp(introMusic.volume,0F,c);
+			yield return new WaitForEndOfFrame();
+		}
+		introMusic.volume = 0;
+	}
+
 	private IEnumerator Refresh(){
 		while(true){
 			if(REFRESH!=null)REFRESH();
 			if(movementSpeed>0){
+				if(movementSpeed > World.MaxSpeed * 0.26f && !startGame)
+					StartGame = true;
 				movementSpeed += Time.deltaTime * acceleration;
 				Acceleration -= Time.deltaTime;
 			}else{
