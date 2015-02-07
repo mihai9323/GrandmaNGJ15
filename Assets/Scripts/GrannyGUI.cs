@@ -19,11 +19,12 @@ public class GrannyGUI : VRGUI
 
 		float delta = World.MovementSpeed / World.MaxSpeed;
 		float size = (Screen.width / 100) * (sliderWidth * delta);
-		//World.MaxSpeed;
-
-
 
 		GUI.backgroundColor = Color.yellow;
+
+		if (delta < 0.25)
+			GUI.backgroundColor = Color.red;
+
 		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*15,size,50),"");
 
 		if (World.Frenzy) {
