@@ -3,13 +3,13 @@ using System.Collections;
 
 public class ArmMeshPosition : MonoBehaviour {
 
-    public GameObject rForArm;
-    public GameObject lForArm;
+    public GameObject rForShoulder;
+    public GameObject lForShoulder;
     public GameObject rHand;
     public GameObject lHand;
 
-    public GameObject rMyoArm;
-    public GameObject lMyoArm;
+    public GameObject rMyoShoulder;
+    public GameObject lMyoShoulder;
     public GameObject rMyoHand;
     public GameObject lMyoHand;
 
@@ -20,8 +20,8 @@ public class ArmMeshPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rForArm.transform.rotation = rMyoArm.transform.rotation;
-        lForArm.transform.rotation = lMyoArm.transform.rotation;
+        rForShoulder.transform.rotation = rMyoShoulder.transform.rotation;
+        lForShoulder.transform.rotation = lMyoShoulder.transform.rotation;
         rHand.transform.rotation = rMyoHand.transform.rotation;
         lHand.transform.rotation = lMyoHand.transform.rotation;
 	}

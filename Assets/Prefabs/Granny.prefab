@@ -3314,12 +3314,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246785261e24b374392bc404f9e62d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rForArm: {fileID: 174266}
-  lForArm: {fileID: 174214}
+  rForShoulder: {fileID: 174342}
+  lForShoulder: {fileID: 174288}
   rHand: {fileID: 174308}
   lHand: {fileID: 174258}
-  rMyoArm: {fileID: 189734}
-  lMyoArm: {fileID: 189712}
+  rMyoShoulder: {fileID: 189734}
+  lMyoShoulder: {fileID: 189712}
   rMyoHand: {fileID: 189732}
   lMyoHand: {fileID: 189724}
 --- !u!114 &11474194
