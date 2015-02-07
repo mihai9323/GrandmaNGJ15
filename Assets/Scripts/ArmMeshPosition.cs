@@ -20,9 +20,14 @@ public class ArmMeshPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
         rForShoulder.transform.rotation = rMyoShoulder.transform.rotation;
         lForShoulder.transform.rotation = lMyoShoulder.transform.rotation;
+        //lForShoulder.transform.localEulerAngles = lForShoulder.transform.localEulerAngles - (lForShoulder.transform.localEulerAngles - lMyoShoulder.transform.localEulerAngles);
+        Debug.Log(lForShoulder.transform.localEulerAngles - lMyoShoulder.transform.localEulerAngles);
         rHand.transform.rotation = rMyoHand.transform.rotation;
+       
         lHand.transform.rotation = lMyoHand.transform.rotation;
+        //lHand.transform.localEulerAngles = lHand.transform.localEulerAngles - (lHand.transform.localEulerAngles - lMyoHand.transform.localEulerAngles);
 	}
 }
