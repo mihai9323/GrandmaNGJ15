@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WorldObject : MonoBehaviour {
 	
-	public Lane lane;
+	[HideInInspector]public Lane lane;
 	
 	public float chance = 1;
 	
@@ -22,6 +22,11 @@ public class WorldObject : MonoBehaviour {
 	}
 	void Bend(){
 		renderer.material.SetVector("_QOffset", World.Bend);
+	}
+	public IEnumerator SpawnMe(float delay){
+		yield return new WaitForSeconds(2.0f);
+		if(this.rigidbody) Destroy(rigidbody);
+		lane.SpawnObject(this);
 	}
 	
 	
