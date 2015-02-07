@@ -86,8 +86,20 @@ public class World : MonoBehaviour {
 			return s_Instance.frenzy;
 		}
 	}
+
+	public static bool StartGame{
+		set{
+			s_Instance.startGame = value;
+		}
+		get{
+			return s_Instance.startGame;
+		}
+	}
+
 	private bool frenzy;
 	private float frenzyTimer;
+
+	private bool startGame = true;
 	
 	private void Awake(){
 		s_Instance = this;
@@ -100,6 +112,8 @@ public class World : MonoBehaviour {
 		while(true){
 			if(REFRESH!=null)REFRESH();
 			if(movementSpeed>0){
+				if(movementSpeed > World.MaxSpeed * 0.26 && startGame)
+					startGame = false;
 				movementSpeed += Time.deltaTime * acceleration;
 				Acceleration -= Time.deltaTime;
 			}else{
