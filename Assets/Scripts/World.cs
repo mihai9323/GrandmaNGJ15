@@ -15,7 +15,7 @@ public class World : MonoBehaviour {
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private float generationDistance;
 	
-	private Vector4 bend;
+	[SerializeField]private Vector4 bend;
 	
 	
 	public static float MovementSpeed{

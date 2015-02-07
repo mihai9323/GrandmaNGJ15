@@ -9,12 +9,14 @@ public class CurveBehaviour : MonoBehaviour {
     float vectorDist;
     
     bool updateOffset = true;
-    float offsetRangeMax = 30;
-    float offsetRangeMin = -30;
-
+    
+	[SerializeField]float angle;
+	[SerializeField] float radius;
+	[SerializeField] float Z;
 	// Use this for initialization
 	void Start () {
 		currentVectorOffset = World.Bend;
+		angle = Random.Range(0,360);
 		StartCoroutine(ChangeOffset());
 		
 	}
@@ -47,11 +49,13 @@ public class CurveBehaviour : MonoBehaviour {
 			//Debug.Log("IM IN COROUTINE!!");
 			currentVectorOffset = World.Bend;
 	        startTime = Time.time;
-			targetVectorOffset = new Vector4(Random.Range(offsetRangeMin, offsetRangeMax), Random.Range(offsetRangeMin, offsetRangeMax), Random.Range(offsetRangeMin, offsetRangeMax), 0);
-	        vectorDist = Vector4.Distance(currentVectorOffset, targetVectorOffset);
+			//targetVectorOffset = new Vector4(Random.Range(offsetRangeMin, offsetRangeMax), Random.Range(offsetRangeMin, offsetRangeMax), Random.Range(offsetRangeMin, offsetRangeMax), 0);
+			angle += Random.Range(-45,45);
+			targetVectorOffset = new Vector4(Mathf.Cos(angle/360 * Mathf.PI) * radius ,Mathf.Sin(angle/360 * Mathf.PI) * radius, Z, 0);
+			vectorDist = Vector4.Distance(currentVectorOffset, targetVectorOffset);
 	
 	
-			yield return new WaitForSeconds(Random.Range(5,10));
+			yield return new WaitForSeconds(Random.Range(6,15));
 		}
 
     }
