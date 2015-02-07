@@ -39,15 +39,8 @@ public class Lane : MonoBehaviour {
 				}
 			}	
 		}
-	public void SpawnObject(){
-		int objectIndex = Random.Range(0,PossibleObjects.Length);
-		while(PossibleObjects[objectIndex].chance<=Random.value){
-			objectIndex = Random.Range(0,PossibleObjects.Length);
-		}
-		GameObject obj = Instantiate(PossibleObjects[objectIndex].gameObject) as GameObject;
-		obj.transform.parent = transform;
-		obj.transform.rotation = PossibleObjects[objectIndex].transform.rotation;
-		obj.GetComponent<WorldObject>().lane = this;
+	public void SpawnObject(WorldObject obj){
+	
 		if(Seamless){
 			obj.transform.position = new Vector3(
 				transform.position.x,
