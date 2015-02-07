@@ -148,7 +148,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -244,10 +244,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 0}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -291,6 +291,12 @@ MonoBehaviour:
   movementSpeed: 3
   generationDistance: 210
   bend: {x: 2.59662557, y: 3.84965563, z: 6.9652853, w: 0}
+  maxSpeed: 0
+  acceleration: 0
+  minX: 0
+  maxX: 0
+  minAcc: 0
+  maxAcc: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,10 +326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 0}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -375,10 +381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 0}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
