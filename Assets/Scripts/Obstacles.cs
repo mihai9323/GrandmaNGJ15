@@ -10,7 +10,7 @@ public class Obstacles : MonoBehaviour {
         beds
         
     }
-
+    public ObstacleType type;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +19,29 @@ public class Obstacles : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        switch (type) {
+            case ObstacleType.doctor:
+                HumanBehaviour();
+                break;
+            case ObstacleType.nurse:
+                HumanBehaviour();
+                break;
+            case ObstacleType.tables:
+                break;
+            case ObstacleType.beds:
+                break;
+            default:
+                break;
+        }
 	
 	}
+
+    void HumanBehaviour() {
+
+    }
+
+    void StationaryBehaviour() {
+
+    }
 }
