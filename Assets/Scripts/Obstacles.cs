@@ -4,6 +4,10 @@ using System.Collections;
 public class Obstacles : MonoBehaviour {
 
     public enum ObstacleType {
+        doctor,
+        nurse,
+        tables,
+        beds
         
     }
 
