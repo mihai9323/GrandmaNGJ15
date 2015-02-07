@@ -9,12 +9,12 @@ public class Hand : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		Debug.Log ("Start");
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		//Debug.Log ("Hit something");
+		Debug.Log ("Hit something");
 		//Debug.Log (other.gameObject.name);
 		if(other.gameObject.name == "LowerRollDetect")
 		{
@@ -31,9 +31,17 @@ public class Hand : MonoBehaviour {
 				//Debug.Log("rollTime:"+rollTime);
 				RollForce = 1/(0.01f+rollTime);
 				Debug.Log(this.gameObject.name+" RollForce:"+RollForce);
+				if (this.gameObject.name == "LeftHand")
+				{
+				}
+				if (this.gameObject.name == "RightHand")
+				{
+
+					//wheelForce(
+				}
 			}
 		}
-
+		
 	}
 
 	// Update is called once per frame
