@@ -7,7 +7,9 @@ public class SoundManager : MonoBehaviour {
 	
 	public AudioClip[] pillSounds;
 	public AudioClip[] punchSounds;
-	
+	private void Awake(){
+		s_Instance = this;
+	}
 	public static AudioClip returnRandomSound(AudioClip[] soundsArray){
 		if(soundsArray != null && soundsArray.Length>0){
 			return soundsArray[Random.Range(0,soundsArray.Length)];
