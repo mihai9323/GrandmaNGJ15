@@ -26,7 +26,7 @@ public class GrannyGUI : VRGUI
 		GUI.backgroundColor = Color.yellow;
 		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*15,size,50),"");
 
-		if (World.frenzy) {
+		if (World.Frenzy) {
 
 			Color c = new Color(Random.value, Random.value, Random.value);
 			if(frenzyTimer < Time.time * 1000)
