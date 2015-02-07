@@ -6,7 +6,6 @@ public class Hand : MonoBehaviour {
 	int RollState = 0;
 	float RollStartTime = Time.time;
 	float RollForce = 0;
-	int 
 
 	// Use this for initialization
 	void Start () {
