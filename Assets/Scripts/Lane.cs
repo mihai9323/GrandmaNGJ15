@@ -31,28 +31,31 @@ public class Lane : MonoBehaviour {
 				    }
 					tAux.transform.parent = this.transform;
 					tAux.GetComponent<WorldObject>().lane = this;
+					lastObject = tAux;
 				}
 			}	
 		}
 	public void SpawnObject(WorldObject obj){
-		float randomR = Random.Range(minObjDistance,maxObjDistance);
-		float z = World.GenerationDistance + randomR;
-		if(lastObject!=null){
-			z = Mathf.Max(World.GenerationDistance + randomR,lastObject.transform.position.z + randomR);
-		}
-		lastObject = obj.transform;
-		obj.transform.position = new Vector3(
-			transform.position.x,
-			transform.position.y, 
-			z
-			);
+	
 		if(Seamless){
 			obj.transform.position = new Vector3(
 				transform.position.x,
 				transform.position.y, 
-				lastObject.transform.position.z 
+				lastObject.transform.position.z + obj.transform.localScale.z - World.MovementSpeed * Time.deltaTime
+				);
+		}else{
+			float randomR = Random.Range(minObjDistance,maxObjDistance);
+			float z = World.GenerationDistance + randomR;
+			if(lastObject!=null){
+				z = Mathf.Max(World.GenerationDistance + randomR,lastObject.transform.position.z + randomR);
+			}
+			obj.transform.position = new Vector3(
+				transform.position.x,
+				transform.position.y, 
+				z
 				);
 		}
+		lastObject = obj.transform;
 	}
 }
 
