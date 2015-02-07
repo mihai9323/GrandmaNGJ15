@@ -17,6 +17,7 @@ public class Lane : MonoBehaviour {
 		if(PossibleObjects != null && PossibleObjects.Length>0){
 		
 				float lastZ = 0;
+				lastObject = transform;
 			    for(int z = 0; z< numberOfObjectsOnLane; z++){
 					lastZ += z * Random.Range(minObjDistance,maxObjDistance);
 				    int objectIndex = Random.Range(0,PossibleObjects.Length);
@@ -25,9 +26,9 @@ public class Lane : MonoBehaviour {
 				                             PossibleObjects[objectIndex].transform.rotation)
 					as Transform;
 				    if(Seamless){
-					Vector3 auxP = tAux.transform.position;
-					auxP.z = z * tAux.transform.localScale.z;
-					tAux.transform.position = auxP; 
+						Vector3 auxP = tAux.transform.position;
+					    auxP.z = lastObject.transform.position.z + tAux.transform.localScale.z/2 + lastObject.transform.localScale.z/2;
+						tAux.transform.position = auxP; 
 				    }
 					tAux.transform.parent = this.transform;
 					tAux.GetComponent<WorldObject>().lane = this;
@@ -41,7 +42,7 @@ public class Lane : MonoBehaviour {
 			obj.transform.position = new Vector3(
 				transform.position.x,
 				transform.position.y, 
-				lastObject.transform.position.z + obj.transform.localScale.z - World.MovementSpeed * Time.deltaTime
+				lastObject.transform.position.z + obj.transform.localScale.z/2 + lastObject.transform.localScale.z/2 - World.MovementSpeed * Time.deltaTime
 				);
 		}else{
 			float randomR = Random.Range(minObjDistance,maxObjDistance);

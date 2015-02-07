@@ -5,8 +5,10 @@ public class GrannyGUI : VRGUI
 {
 	public int sliderWidth = 60;
 	public GUISkin grannySkin;
-	public GUISkin grannyOverlay;
 	public int speed = 0;
+	public bool frenzy = false;
+	public int frenzyBlinkTimer = 200;
+	private float frenzyTimer = 0;
 
 	public override void OnVRGUI()
 	{
@@ -15,9 +17,24 @@ public class GrannyGUI : VRGUI
 		GUI.skin = grannySkin;
 		GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
 		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*30,(Screen.width/100)*sliderWidth,50),"");
+		Debug.Log ((Screen.width / 100) * sliderWidth);
 
-		GUI.skin = grannyOverlay;
+		GUI.backgroundColor = Color.yellow;
 		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*30,(Screen.width/100)*speed,50),"");
+
+		if (frenzy) {
+
+			Color c = new Color(Random.value, Random.value, Random.value);
+			if(frenzyTimer < Time.time * 1000)
+			{
+				c = new Color(Random.value, Random.value, Random.value);
+				frenzyTimer = Time.time * 1000 + frenzyBlinkTimer;
+			}
+
+			GUI.backgroundColor = c;
+
+			GUI.Box (new Rect ((Screen.width / 100) * offset - 10, (Screen.height / 100) * 30 - 10, (Screen.width / 100) * sliderWidth + 20, 70), "");
+		}
 		GUILayout.EndArea();
 	}
 }
