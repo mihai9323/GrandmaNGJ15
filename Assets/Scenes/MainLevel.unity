@@ -712,8 +712,6 @@ MonoBehaviour:
   customCursor: {fileID: 0}
   sliderWidth: 60
   grannySkin: {fileID: 11400000, guid: 15056b9c7d5334f018ff4fa749653712, type: 2}
-  speed: 0
-  frenzy: 0
   frenzyBlinkTimer: 200
 --- !u!1 &284246734
 GameObject:
@@ -2098,6 +2096,7 @@ MonoBehaviour:
   maxX: 1.39999998
   minAcc: -1
   maxAcc: 5
+  frenzyTime: 0
 --- !u!4 &1072805146
 Transform:
   m_ObjectHideFlags: 0
@@ -2285,7 +2284,7 @@ GameObject:
   - 114: {fileID: 1117089930}
   m_Layer: 0
   m_Name: Granny
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2460,6 +2459,10 @@ Prefab:
     - target: {fileID: 489708, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189708, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
