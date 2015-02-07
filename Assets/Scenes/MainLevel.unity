@@ -894,10 +894,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 0}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -1819,7 +1819,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 958460132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -2061,6 +2061,7 @@ GameObject:
   - 4: {fileID: 1072805146}
   - 114: {fileID: 1072805145}
   - 114: {fileID: 1072805147}
+  - 114: {fileID: 1072805148}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -2091,12 +2092,12 @@ MonoBehaviour:
   movementSpeed: 3
   generationDistance: 210
   bend: {x: 2.59662557, y: 3.84965563, z: 6.9652853, w: 0}
-  maxSpeed: 0
+  maxSpeed: 20
   acceleration: 0
-  minX: 0
-  maxX: 0
-  minAcc: 0
-  maxAcc: 0
+  minX: -1.39999998
+  maxX: 1.39999998
+  minAcc: -1
+  maxAcc: 5
 --- !u!4 &1072805146
 Transform:
   m_ObjectHideFlags: 0
@@ -2131,6 +2132,18 @@ MonoBehaviour:
   angle: 112
   radius: 20
   Z: 30
+--- !u!114 &1072805148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 009f2c636e6c8884b817d6b7a0057a81,
+    type: 2}
+  m_PrefabInternal: {fileID: 1797272343}
+  m_GameObject: {fileID: 1072805144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1073390229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,10 +2650,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 0}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -4331,10 +4344,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 0}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
