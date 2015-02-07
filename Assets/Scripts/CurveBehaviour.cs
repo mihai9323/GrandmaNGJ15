@@ -9,7 +9,7 @@ public class CurveBehaviour : MonoBehaviour {
     float vectorDist;
     
     bool updateOffset = true;
-    
+    float distCovered = 0;
 	[SerializeField]float angle;
 	[SerializeField] float radius;
 	[SerializeField] float Z;
@@ -32,7 +32,7 @@ public class CurveBehaviour : MonoBehaviour {
 
     void lerpCurveOffset() {
 
-        float distCovered = (Time.time - startTime) * World.MovementSpeed;
+        distCovered += Time.deltaTime * World.MovementSpeed;
         float fracJourney = distCovered / vectorDist;
         Vector4 temPos = Vector4.Lerp(currentVectorOffset, targetVectorOffset, fracJourney);
         World.Bend = temPos;
@@ -45,7 +45,7 @@ public class CurveBehaviour : MonoBehaviour {
 
     IEnumerator ChangeOffset() {
 		while(true){
-
+			distCovered = 0;
 			//Debug.Log("IM IN COROUTINE!!");
 			currentVectorOffset = World.Bend;
 	        startTime = Time.time;

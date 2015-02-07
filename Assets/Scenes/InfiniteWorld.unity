@@ -871,6 +871,7 @@ GameObject:
   - 4: {fileID: 1072805146}
   - 114: {fileID: 1072805145}
   - 114: {fileID: 1072805147}
+  - 114: {fileID: 1072805148}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -901,6 +902,10 @@ MonoBehaviour:
   movementSpeed: 3
   generationDistance: 210
   bend: {x: 2.59662557, y: 3.84965563, z: 6.9652853, w: 0}
+  maxSpeed: 50
+  acceleration: 0
+  minX: -6
+  maxX: 6
 --- !u!4 &1072805146
 Transform:
   m_ObjectHideFlags: 0
@@ -935,6 +940,17 @@ MonoBehaviour:
   angle: 112
   radius: 20
   Z: 30
+--- !u!114 &1072805148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072805144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa44b6dc2001f31468a2b1e2f5eb8070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1105812326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,7 +1038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 443ab5ff7ac48ec42817af189de52962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xMovement: .100000001
+  xMovement: 1
 --- !u!1 &1191022500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1463,22 @@ Prefab:
     - target: {fileID: 400004, guid: 009f2c636e6c8884b817d6b7a0057a81, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 009f2c636e6c8884b817d6b7a0057a81, type: 2}
+      propertyPath: deceleration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 009f2c636e6c8884b817d6b7a0057a81, type: 2}
+      propertyPath: maxSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 009f2c636e6c8884b817d6b7a0057a81, type: 2}
+      propertyPath: minX
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 009f2c636e6c8884b817d6b7a0057a81, type: 2}
+      propertyPath: maxX
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 009f2c636e6c8884b817d6b7a0057a81, type: 2}
