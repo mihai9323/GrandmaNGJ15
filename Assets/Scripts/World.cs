@@ -20,6 +20,7 @@ public class World : MonoBehaviour {
 	[SerializeField] private float acceleration;
 	[SerializeField] private float minX, maxX;
 	[SerializeField] private float minAcc, maxAcc;
+	[SerializeField] private float frenzyTime;
 	public static float MovementSpeed{
 		set{
 			s_Instance.movementSpeed = value;
@@ -65,12 +66,27 @@ public class World : MonoBehaviour {
 			
 			s_Instance.acceleration = Mathf.Clamp(value,s_Instance.minAcc,s_Instance.maxAcc);
 		}
+		get{
+			
+			return s_Instance.acceleration;
+		}
 	}
 	public static float MaxSpeed{
 		get{
 			return s_Instance.maxSpeed;
 		}
 	}
+	public static bool Frenzy{
+		set{
+			s_Instance.frenzy = value;
+			if(value)frenzyTimer = Time.time;
+		}
+		get{
+			return s_Instance.frenzy;
+		}
+	}
+	private bool frenzy;
+	private float frenzyTimer;
 	
 	private void Awake(){
 		s_Instance = this;
@@ -84,11 +100,13 @@ public class World : MonoBehaviour {
 			if(REFRESH!=null)REFRESH();
 			if(movementSpeed>0){
 				movementSpeed += Time.deltaTime * acceleration;
-				acceleration -= Time.deltaTime;
+				Acceleration -= Time.deltaTime;
 			}else{
-				acceleration = 0;
+				Acceleration = 0;
 			}
-			
+			if(Time.time>frenzyTimer+ frenzyTime){
+				Frenzy = false;
+			}
 			movementSpeed = Mathf.Clamp(movementSpeed,0,maxSpeed);
 			
 			yield return new WaitForEndOfFrame();
