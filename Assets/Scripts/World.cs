@@ -23,6 +23,7 @@ public class World : MonoBehaviour {
 	[SerializeField] private float frenzyTime;
 	public static float MovementSpeed{
 		set{
+			value = Mathf.Clamp(value,0,MaxSpeed);
 			s_Instance.movementSpeed = value;
 		}
 		get{
