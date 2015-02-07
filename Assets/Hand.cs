@@ -38,12 +38,23 @@ public class Hand : MonoBehaviour {
 				}
 				if (this.gameObject.name == "RightHand")
 				{
-					Granny.Move(-1,RollForce);
-					//wheelForce(
+					Granny.Move(-1,RollForce);				
 				}
 			}
 		}
-		
+
+		bool isHandUp = other.gameObject.name == "HandsUpDetect";
+		{
+			if (this.gameObject.name == "LeftHand")
+			{
+				Granny.HandsUp(1,isHandUp);
+			}
+			if (this.gameObject.name == "RightHand")
+			{
+				Granny.HandsUp(-1,isHandUp);				
+			}
+		}
+
 	}
 
 	// Update is called once per frame
