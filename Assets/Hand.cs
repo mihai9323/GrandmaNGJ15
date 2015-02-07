@@ -33,11 +33,11 @@ public class Hand : MonoBehaviour {
 				Debug.Log(this.gameObject.name+" RollForce:"+RollForce);
 				if (this.gameObject.name == "LeftHand")
 				{
-					Granny.Move(-1,RollForce);
+					Granny.Move(1,RollForce);
 				}
 				if (this.gameObject.name == "RightHand")
 				{
-					Granny.Move(1,RollForce);
+					Granny.Move(-1,RollForce);
 					//wheelForce(
 				}
 			}
