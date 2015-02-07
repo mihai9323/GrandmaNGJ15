@@ -1,0 +1,33 @@
+Classes
+
+	- Arm gestures 
+	- Obstacles
+	- Lane
+	- World
+	- WorldObjects
+	- CharacterMovement
+	- PowerUps
+	- 
+	
+	
+Gui
+	Ingame
+		- Wheel'o'meter
+		- Rage bar / frenzy 
+	Menu
+		- Play
+		- HighScorecore
+		- Settings?
+		- Sound
+		- Credits
+		
+	
+Obstacles
+		LaneIndependent
+			- Doctors
+			- Nurses
+		Stationary:
+		- Tables
+		- Beds
+		
+
