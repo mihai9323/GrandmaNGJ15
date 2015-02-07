@@ -207,7 +207,6 @@ GameObject:
   - 4: {fileID: 489732}
   - 33: {fileID: 3389712}
   - 23: {fileID: 2389712}
-  - 114: {fileID: 11489728}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -272,7 +271,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 489714}
@@ -811,21 +810,6 @@ MonoBehaviour:
   fadeTime: 2
   fadeColor: {r: .00999999978, g: .00999999978, b: .00999999978, a: 1}
   fadeShader: {fileID: 30, guid: 0000000000000000f000000000000000, type: 0}
---- !u!114 &11489728
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f73c111e5a1436295869186e2e823f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myo: {fileID: 0}
-  waveInMaterial: {fileID: 2100000, guid: 2481aef9b23ed4d869d5fb417a44fefd, type: 2}
-  waveOutMaterial: {fileID: 2100000, guid: beca7d66ce77b41769cf37f1a0f2c355, type: 2}
-  doubleTapMaterial: {fileID: 2100000, guid: 1f16471eaab1a45bcbf5dbfddc3894d7, type: 2}
 --- !u!114 &11489730
 MonoBehaviour:
   m_ObjectHideFlags: 1
