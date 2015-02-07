@@ -11,9 +11,9 @@ Classes
 	
 	
 Gui
-	Ingame
-		- Wheel'o'meter
-		- Rage bar / frenzy 
+//	Ingame
+//		- Wheel'o'meter
+//		- Rage bar / frenzy 
 	Menu
 		- Play
 		- HighScorecore
