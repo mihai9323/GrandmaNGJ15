@@ -3,7 +3,7 @@ using System.Collections;
 
 public class WorldObject : MonoBehaviour {
 	
-	public Lane lane;
+	[HideInInspector]public Lane lane;
 	
 	public float chance = 1;
 	
@@ -12,17 +12,23 @@ public class WorldObject : MonoBehaviour {
 	}
 	void OnDestroy(){
 		World.REFRESH -= Move;
+		StopAllCoroutines();
+		
+		Debug.Log("removed "+this.name);
 	}
 	void Move(){
 		transform.position -= new Vector3(0,0, 1) * World.MovementSpeed * Time.deltaTime;
 		if(transform.position.z<0){
-			lane.SpawnObject(this);
+			lane.SpawnObject();
+			Destroy(this.gameObject);
+		}else{
+			Bend ();
 		}
-		Bend ();
 	}
 	void Bend(){
 		renderer.material.SetVector("_QOffset", World.Bend);
 	}
+	
 	
 	
 }
