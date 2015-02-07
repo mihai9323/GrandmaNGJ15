@@ -50,7 +50,7 @@ public class Lane : MonoBehaviour {
 			obj.transform.position = new Vector3(
 				transform.position.x,
 				transform.position.y, 
-				World.GenerationDistance
+				lastObject.transform.position.z 
 				);
 		}
 	}

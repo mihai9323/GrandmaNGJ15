@@ -558,7 +558,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 49556e8e62457224da2859b411b10d82, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
-  numberOfObjectsOnLane: 5
+  numberOfObjectsOnLane: 6
   Seamless: 1
 --- !u!4 &958460134
 Transform:
@@ -671,7 +671,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
-  numberOfObjectsOnLane: 5
+  numberOfObjectsOnLane: 6
   Seamless: 1
 --- !u!1 &1117089927
 GameObject:
@@ -960,7 +960,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
-  numberOfObjectsOnLane: 5
+  numberOfObjectsOnLane: 6
   Seamless: 1
 --- !u!1 &1724111435
 GameObject:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2f807afbf876f174ea01c4d8f8cc845b, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
-  numberOfObjectsOnLane: 5
+  numberOfObjectsOnLane: 6
   Seamless: 1
 --- !u!1 &1748977630
 GameObject:
