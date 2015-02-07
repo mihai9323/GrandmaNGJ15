@@ -7,7 +7,8 @@ public class World : MonoBehaviour {
 	
 	public Lane[] lanes;
 	
-	
+	public delegate void refreshDelegate();
+	public static event refreshDelegate REFRESH;
 	
 	
 	
@@ -38,9 +39,14 @@ public class World : MonoBehaviour {
 		s_Instance = this;
 	}
 	private void Start(){
-		
+		StartCoroutine(Refresh());
 	}
 	
-	
+	private IEnumerator Refresh(){
+		while(true){
+			if(REFRESH!=null)REFRESH();
+			yield return new WaitForEndOfFrame();
+		}
+	}
 }
 			
