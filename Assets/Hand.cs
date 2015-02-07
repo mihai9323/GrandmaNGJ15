@@ -4,12 +4,13 @@ using System.Collections;
 public class Hand : MonoBehaviour {
 
 	int RollState = 0;
-	float RollStartTime = Time.time;
+    float RollStartTime;
 	float RollForce = 0;
 
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Start");
+        RollStartTime = Time.time;
 	}
 
 	void OnTriggerEnter(Collider other)
