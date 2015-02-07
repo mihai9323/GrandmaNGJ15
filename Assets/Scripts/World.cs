@@ -15,6 +15,7 @@ public class World : MonoBehaviour {
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private float generationDistance;
 	
+	private Vector4 bend;
 	
 	
 	public static float MovementSpeed{
@@ -33,6 +34,14 @@ public class World : MonoBehaviour {
 			return s_Instance.generationDistance;
 		}
 	}
+	public static Vector4 Bend{
+		get{
+			return s_Instance.bend;
+		}
+		set{
+			s_Instance.bend = value;
+		}
+	}
 	
 	
 	private void Awake(){
@@ -45,6 +54,7 @@ public class World : MonoBehaviour {
 	private IEnumerator Refresh(){
 		while(true){
 			if(REFRESH!=null)REFRESH();
+			
 			yield return new WaitForEndOfFrame();
 		}
 	}
