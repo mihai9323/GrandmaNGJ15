@@ -1,5 +1,6 @@
 Classes
-
+	
+	- GameStateManager
 	- Arm gestures 
 	- Obstacles
 	- Lane
@@ -7,7 +8,6 @@ Classes
 	- WorldObjects
 	- CharacterMovement
 	- PowerUps
-	- 
 	
 	
 Gui
@@ -30,4 +30,12 @@ Obstacles
 		- Tables
 		- Beds
 		
+GameState
+		Menu
+		GrannyModes
+			- Normal
+			- Frenzy
+			- SlowedDown (KnittingEdition!)
+			- almost caught
+			- HighScore
 
