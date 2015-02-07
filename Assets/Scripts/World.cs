@@ -54,6 +54,9 @@ public class World : MonoBehaviour {
 	private IEnumerator Refresh(){
 		while(true){
 			if(REFRESH!=null)REFRESH();
+			if(movementSpeed>0){
+				movementSpeed -= Time.deltaTime;
+			}
 			
 			yield return new WaitForEndOfFrame();
 		}

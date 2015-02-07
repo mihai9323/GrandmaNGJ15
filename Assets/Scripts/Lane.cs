@@ -21,6 +21,9 @@ public class Lane : MonoBehaviour {
 			    for(int z = 0; z< numberOfObjectsOnLane; z++){
 					lastZ += z * Random.Range(minObjDistance,maxObjDistance);
 				    int objectIndex = Random.Range(0,PossibleObjects.Length);
+				    while(PossibleObjects[objectIndex].chance<=Random.value){
+					      objectIndex = Random.Range(0,PossibleObjects.Length);
+					}
 				    Transform tAux = Instantiate(PossibleObjects[objectIndex].transform,
 				                             new Vector3(transform.position.x,transform.position.y, lastZ),
 				                             PossibleObjects[objectIndex].transform.rotation)

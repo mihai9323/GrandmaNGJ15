@@ -17,7 +17,7 @@ public class GrannyGUI : VRGUI
 		GUI.skin = grannySkin;
 		GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
 		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*30,(Screen.width/100)*sliderWidth,50),"");
-		Debug.Log ((Screen.width / 100) * sliderWidth);
+		//Debug.Log ((Screen.width / 100) * sliderWidth);
 
 		GUI.backgroundColor = Color.yellow;
 		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*30,(Screen.width/100)*speed,50),"");

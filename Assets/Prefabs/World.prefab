@@ -341,6 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PossibleObjects:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
+  - {fileID: 11400000, guid: 2be6ae77097093842a8915de48235dad, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
