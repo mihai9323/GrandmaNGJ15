@@ -6,7 +6,6 @@ public class Hand : MonoBehaviour {
 	int RollState = 0;
 	float RollStartTime = Time.time;
 	float RollForce = 0;
-	int 
 
 	// Use this for initialization
 	void Start () {
@@ -34,11 +33,11 @@ public class Hand : MonoBehaviour {
 				Debug.Log(this.gameObject.name+" RollForce:"+RollForce);
 				if (this.gameObject.name == "LeftHand")
 				{
-					Granny.Move(-1,RollForce);
+					Granny.Move(1,RollForce);
 				}
 				if (this.gameObject.name == "RightHand")
 				{
-					Granny.Move(1,RollForce);
+					Granny.Move(-1,RollForce);
 					//wheelForce(
 				}
 			}
