@@ -2061,6 +2061,7 @@ GameObject:
   - 4: {fileID: 1072805146}
   - 114: {fileID: 1072805145}
   - 114: {fileID: 1072805147}
+  - 114: {fileID: 1072805148}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -2131,6 +2132,17 @@ MonoBehaviour:
   angle: 112
   radius: 20
   Z: 30
+--- !u!114 &1072805148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072805144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa44b6dc2001f31468a2b1e2f5eb8070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1073390229
 GameObject:
   m_ObjectHideFlags: 0
