@@ -38,10 +38,12 @@ public class JointOrientation : MonoBehaviour
 
         // Update references when the pose becomes fingers spread or the q key is pressed.
         bool updateReference = false;
+
         if (thalmicMyo.pose != _lastPose) {
             _lastPose = thalmicMyo.pose;
 
             if (thalmicMyo.pose == Pose.FingersSpread) {
+				Debug.Log("Spread!");
                 updateReference = true;
 
                 ExtendUnlockAndNotifyUserAction(thalmicMyo);
