@@ -5,8 +5,8 @@ public class KeyInputs : MonoBehaviour {
 
 	void Update(){
 		
-		if(Input.GetMouseButtonUp(0))Granny.Move(-1,10);
-		if(Input.GetMouseButtonUp(1))Granny.Move(1,10);
+		if(Input.GetMouseButtonUp(0))Granny.Move(-1,5);
+		if(Input.GetMouseButtonUp(1))Granny.Move(1,5);
 		
 	}
 }

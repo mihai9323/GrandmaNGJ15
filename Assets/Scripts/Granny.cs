@@ -25,7 +25,7 @@ public class Granny : MonoBehaviour {
 		z = transform.position.z;
 	}
 	public static void Move(int direction, float power){
-        Debug.Log ("MOVE");
+
 		if(s_Instance.timer != -1){
 			
 			if(direction != s_Instance.prevDirection){

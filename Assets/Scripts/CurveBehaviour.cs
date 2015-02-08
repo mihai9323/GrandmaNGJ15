@@ -51,11 +51,13 @@ public class CurveBehaviour : MonoBehaviour {
 	        startTime = Time.time;
 			//targetVectorOffset = new Vector4(Random.Range(offsetRangeMin, offsetRangeMax), Random.Range(offsetRangeMin, offsetRangeMax), Random.Range(offsetRangeMin, offsetRangeMax), 0);
 			angle += Random.Range(-15,15);
+			
 			targetVectorOffset = new Vector4(Mathf.Cos(angle/360 * Mathf.PI) * radius ,Mathf.Sin(angle/360 * Mathf.PI) * radius, Z, 0);
 			vectorDist = Vector4.Distance(currentVectorOffset, targetVectorOffset);
 	
-	
+			
 			yield return new WaitForSeconds(Random.Range(6,15));
+			
 		}
 
     }

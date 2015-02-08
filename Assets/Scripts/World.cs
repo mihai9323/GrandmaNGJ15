@@ -15,7 +15,7 @@ public class World : MonoBehaviour {
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private float generationDistance;
 	
-	[SerializeField]private Vector4 bend;
+	[SerializeField] private Vector4 bend;
 	[SerializeField] private float maxSpeed;
 	[SerializeField] private float acceleration;
 	[SerializeField] private float minX, maxX;
@@ -130,7 +130,7 @@ public class World : MonoBehaviour {
 		float c = 0;
 
 		newSource.volume = 1;
-		newSource.Play();
+		if(newSource!=themeMusic || !newSource.isPlaying) newSource.Play();
 
 		
 		
