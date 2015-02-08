@@ -24,7 +24,7 @@ public class ArmMeshPosition : MonoBehaviour {
        // rForShoulder.transform.rotation = rMyoShoulder.transform.rotation;
         //lForShoulder.transform.rotation = lMyoShoulder.transform.rotation;
         //lForShoulder.transform.localEulerAngles = lForShoulder.transform.localEulerAngles - (lForShoulder.transform.localEulerAngles - lMyoShoulder.transform.localEulerAngles);
-        Debug.Log(lForShoulder.transform.localEulerAngles - lMyoShoulder.transform.localEulerAngles);
+
         //rHand.transform.rotation = rMyoHand.transform.rotation;
        
         //lHand.transform.rotation = lMyoHand.transform.rotation;

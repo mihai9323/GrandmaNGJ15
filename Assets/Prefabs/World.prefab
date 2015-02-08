@@ -42,6 +42,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400016}
+  - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -136,7 +137,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 1.76999998, y: .75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -191,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -1.92999995, y: .75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -227,7 +228,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -244,10 +245,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
-  - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 11400000, guid: 1b10f74d8e0d8fd48900be181e947fc4, type: 2}
+  - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
+  - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
+  - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -296,8 +297,10 @@ MonoBehaviour:
   minX: -1.39999998
   maxX: 1.39999998
   minAcc: -1
-  maxAcc: 5
-  frenzyTime: 0
+  maxAcc: 10
+  frenzyTime: 5
+  introMusic: {fileID: 0}
+  themeMusic: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,10 +330,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
-  - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 11400000, guid: 1b10f74d8e0d8fd48900be181e947fc4, type: 2}
+  - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
+  - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
+  - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -382,10 +385,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
-  - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 11400000, guid: 1b10f74d8e0d8fd48900be181e947fc4, type: 2}
+  - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
+  - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
+  - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 10
@@ -404,6 +407,17 @@ MonoBehaviour:
   angle: 112
   radius: 20
   Z: 30
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa44b6dc2001f31468a2b1e2f5eb8070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

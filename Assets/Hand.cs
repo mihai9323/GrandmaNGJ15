@@ -9,13 +9,13 @@ public class Hand : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("Start");
+		
         RollStartTime = Time.time;
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log ("Hit something");
+		
 		//Debug.Log (other.gameObject.name);
 		if(other.gameObject.name == "LowerRollDetect")
 		{
