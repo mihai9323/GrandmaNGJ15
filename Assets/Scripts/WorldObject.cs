@@ -12,22 +12,19 @@ public class WorldObject : MonoBehaviour {
 	}
 	void OnDestroy(){
 		World.REFRESH -= Move;
+		StopAllCoroutines();
+		
+		
 	}
 	void Move(){
 		transform.position -= new Vector3(0,0, 1) * World.MovementSpeed * Time.deltaTime;
 		if(transform.position.z<0){
-			lane.SpawnObject(this);
+			lane.SpawnObject();
+			Destroy(this.gameObject);
 		}
-		Bend ();
 	}
-	void Bend(){
-		renderer.material.SetVector("_QOffset", World.Bend);
-	}
-	public IEnumerator SpawnMe(float delay){
-		yield return new WaitForSeconds(2.0f);
-		if(this.rigidbody) Destroy(rigidbody);
-		lane.SpawnObject(this);
-	}
+	
+	
 	
 	
 }

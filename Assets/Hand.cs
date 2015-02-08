@@ -9,19 +9,19 @@ public class Hand : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log ("Start");
+		
         RollStartTime = Time.time;
 	}
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log ("Hit something");
+		
 		//Debug.Log (other.gameObject.name);
 		if(other.gameObject.name == "LowerRollDetect")
 		{
 			RollState = 1;
 			RollStartTime = Time.time; 
-			//Debug.Log ("lower");
+			Debug.Log ("lower");
 		}
 		if(other.gameObject.name == "UpperRollDetect")
 		{
@@ -29,7 +29,7 @@ public class Hand : MonoBehaviour {
 			{
 				RollState=0;
 				float rollTime = Time.time - RollStartTime;
-				//Debug.Log("rollTime:"+rollTime);
+				Debug.Log("rollTime:"+rollTime);
 				RollForce = 1/(0.01f+rollTime);
 				Debug.Log(this.gameObject.name+" RollForce:"+RollForce);
 				if (this.gameObject.name == "LeftHand")
