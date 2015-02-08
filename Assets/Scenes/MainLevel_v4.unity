@@ -91,7 +91,7 @@ GameObject:
   - 65: {fileID: 41107604}
   m_Layer: 0
   m_Name: RightHand
-  m_TagString: Untagged
+  m_TagString: Fist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1070,6 +1070,14 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 2561e4fc23706447c84e5683ece953d3,
         type: 2}
+    - target: {fileID: 189732, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
+      propertyPath: m_TagString
+      value: Fist
+      objectReference: {fileID: 0}
+    - target: {fileID: 189724, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
+      propertyPath: m_TagString
+      value: Fist
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400006, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2dd3019e6af484d86aa761b9b0ea461f, type: 2}
@@ -1149,6 +1157,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
   - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
   - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 5
@@ -3054,6 +3063,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
   - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
   - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 5
@@ -4886,7 +4896,7 @@ GameObject:
   - 65: {fileID: 1999748349}
   m_Layer: 0
   m_Name: LeftHand
-  m_TagString: Untagged
+  m_TagString: Fist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5306,6 +5316,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
   - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
   - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
   numberOfObjectsOnLane: 5
