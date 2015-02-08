@@ -301,6 +301,7 @@ MonoBehaviour:
   frenzyTime: 5
   introMusic: {fileID: 0}
   themeMusic: {fileID: 0}
+  frenzyMusic: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

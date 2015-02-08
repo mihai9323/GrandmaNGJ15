@@ -79,6 +79,12 @@ public class World : MonoBehaviour {
 	}
 	public static bool Frenzy{
 		set{
+			if(value != s_Instance.frenzy && value){
+				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.themeMusic,s_Instance.frenzyMusic));
+				
+			}else if(value!=s_Instance.frenzy && !value){
+				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.frenzyMusic,s_Instance.themeMusic));
+			}
 			s_Instance.frenzy = value;
 			if(value)s_Instance.frenzyTimer = Time.time;
 		}
@@ -90,7 +96,8 @@ public class World : MonoBehaviour {
 	public static bool StartGame{
 		set{
 			if(value != s_Instance.startGame && value){
-				s_Instance.StartCoroutine(s_Instance.ChangeSound());
+				
+				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.introMusic,s_Instance.themeMusic));
 			}
 			s_Instance.startGame = value;
 		}
@@ -100,6 +107,8 @@ public class World : MonoBehaviour {
 	}
 	public AudioSource introMusic;
 	public AudioSource themeMusic;
+	public AudioSource frenzyMusic;
+	//public AudioSource frenzyMusicLoop;
 	private bool frenzy;
 	private float frenzyTimer;
 
@@ -112,15 +121,16 @@ public class World : MonoBehaviour {
 		StartCoroutine(Refresh());
 		introMusic.Play ();
 	}
-	private IEnumerator ChangeSound(){
+	private IEnumerator ChangeSound(AudioSource oldSource, AudioSource newSource){
 		float c = 0;
-		themeMusic.Play();
+		newSource.volume = 1;
+		newSource.Play();
 		while (c<1) {
-			c+= Time.deltaTime * .2f;
-			introMusic.volume = Mathf.Lerp(introMusic.volume,0F,c);
+			c+= Time.deltaTime * .5f;
+			oldSource.volume = Mathf.Lerp(oldSource.volume,0F,c);
 			yield return new WaitForEndOfFrame();
 		}
-		introMusic.volume = 0;
+		oldSource.volume = 0;
 	}
 
 	private IEnumerator Refresh(){
