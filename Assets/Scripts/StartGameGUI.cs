@@ -21,8 +21,8 @@ public class StartGameGUI : VRGUI
 		
 		if (!World.StartGame) {
 			
-			GUI.Box (new Rect ((float)((Screen.width - gameLogo.width) * 0.5), 0, gameLogo.width, gameLogo.height), gameLogo);
-			GUI.Box (new Rect ((float)((Screen.width - instruction.width * 0.5) * 0.5), 0, (float)(instruction.width * 0.5), (float)(instruction.height * 0.5)), instruction);
+			GUI.Box (new Rect (200, (float)((Screen.height - gameLogo.height) * 0.5), gameLogo.width, gameLogo.height), gameLogo);
+			GUI.Box (new Rect (400+gameLogo.width,(float)((Screen.height - instruction.height * 0.5) * 0.5), (float)(instruction.width * 0.5), (float)(instruction.height * 0.5)), instruction);
 		} else {
 
 
