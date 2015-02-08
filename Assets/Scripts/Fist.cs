@@ -30,7 +30,7 @@ public class Fist : MonoBehaviour {
 		}
 		gob.rigidbody.isKinematic = false;
 		gob.rigidbody.AddForce(Vector3.forward * 2000,ForceMode.Force);
-		gob.AddComponent<Fist>();
+		if(!gob.GetComponent<Fist>())gob.AddComponent<Fist>();
 		Destroy(gob,2.0f);
 		gob.GetComponent<WorldObject>().lane.SpawnObject();
 		new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.punchSounds),transform.position, 3.0f, 1.0f, Random.Range(.9f,1.5f));
@@ -38,7 +38,7 @@ public class Fist : MonoBehaviour {
 		AS.clip = SoundManager.returnRandomSound(SoundManager.s_Instance.maleShout);
 		AS.pitch = Random.Range(.95f,1.1f);
 		AS.Play();
-		Debug.Log("doctor hit");
+		
 		
 	}
 	private void DoctressPunch(GameObject gob, Vector3 point){
@@ -50,7 +50,7 @@ public class Fist : MonoBehaviour {
 			World.BestCombo = World.currentCombo;
 		}
 		gob.rigidbody.isKinematic = false;
-		gob.AddComponent<Fist>();
+		if(!gob.GetComponent<Fist>())gob.AddComponent<Fist>();
 		gob.rigidbody.AddForce(Vector3.forward * 2000,ForceMode.Force);
 		Destroy(gob,2.0f);
 		gob.GetComponent<WorldObject>().lane.SpawnObject();
@@ -59,7 +59,7 @@ public class Fist : MonoBehaviour {
 		AS.clip = SoundManager.returnRandomSound(SoundManager.s_Instance.femaleShout);
 		AS.pitch = Random.Range(.95f,1.1f);
 		AS.Play();
-		Debug.Log("doctor hit");
+		
 	}
 }
 

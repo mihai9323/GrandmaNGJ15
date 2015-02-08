@@ -81,6 +81,8 @@ public class World : MonoBehaviour {
 		set{
 			if(value != s_Instance.frenzy && value){
 				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.themeMusic,s_Instance.frenzyMusic));
+				MovementSpeed = MaxSpeed;
+				
 				
 			}else if(value!=s_Instance.frenzy && !value){
 				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.frenzyMusic,s_Instance.themeMusic));
@@ -108,7 +110,7 @@ public class World : MonoBehaviour {
 	}
 	public static int BestCombo{
 		set{
-			if(value>BestCombo){
+			if(value>=BestCombo){
 				s_Instance.bestCombo = value;
 			}
 			
@@ -171,7 +173,12 @@ public class World : MonoBehaviour {
 				if(movementSpeed > World.MaxSpeed * 0.26f && !startGame)
 					StartGame = true;
 				movementSpeed += Time.deltaTime * acceleration;
-				Acceleration -= Time.deltaTime;
+				if(!Frenzy){
+					Acceleration -= Time.deltaTime;
+					
+					}else{
+					Acceleration = maxAcc;
+					}
 			}else{
 				Acceleration = 0;
 			}
