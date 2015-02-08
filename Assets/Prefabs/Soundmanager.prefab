@@ -669,9 +669,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9cfe84fad6eb0a04f835a3e9cc3369e3, type: 3}
   - {fileID: 8300000, guid: 9703571abcaa0764d8ca27769be97050, type: 3}
   - {fileID: 8300000, guid: 4e5f0cd66b5ec0c4ba452d3d91c7e39b, type: 3}
-  - {fileID: 8300000, guid: a499e7f50a5f3374fb645557b01938b9, type: 3}
-  - {fileID: 8300000, guid: 25139f37ab422814c8b2774a2715624e, type: 3}
   - {fileID: 8300000, guid: 9055fad55930f0f49be11c67149c3202, type: 3}
+  - {fileID: 8300000, guid: 25139f37ab422814c8b2774a2715624e, type: 3}
+  tableSounds:
+  - {fileID: 8300000, guid: a499e7f50a5f3374fb645557b01938b9, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

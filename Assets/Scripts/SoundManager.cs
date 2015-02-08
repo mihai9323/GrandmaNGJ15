@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip[] maleShout;
 	public AudioClip[] femaleShout;
 	public AudioClip[] nanaSounds;
+	public AudioClip[] tableSounds;
 	private void Awake(){
 		s_Instance = this;
 	}

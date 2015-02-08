@@ -445,7 +445,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 388113760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 1.76999998, y: .75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -463,13 +463,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
-  - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 11400000, guid: 1b10f74d8e0d8fd48900be181e947fc4, type: 2}
+  - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
+  - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
+  - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
-  numberOfObjectsOnLane: 10
+  numberOfObjectsOnLane: 5
   Seamless: 0
 --- !u!1 &543332822
 GameObject:
@@ -844,7 +845,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 958460132}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 4.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -946,6 +947,7 @@ GameObject:
   - 4: {fileID: 1072805146}
   - 114: {fileID: 1072805145}
   - 114: {fileID: 1072805147}
+  - 114: {fileID: 1072805149}
   - 114: {fileID: 1072805148}
   m_Layer: 0
   m_Name: World
@@ -982,8 +984,13 @@ MonoBehaviour:
   minX: -6
   maxX: 6
   minAcc: -1
-  maxAcc: 5
-  frenzyTime: 0
+  maxAcc: 10
+  frenzyTime: 5
+  introMusic: {fileID: 0}
+  themeMusic: {fileID: 0}
+  frenzyMusic: {fileID: 0}
+  bornToBeWild: {fileID: 0}
+  angryDoctor: {fileID: 0}
 --- !u!4 &1072805146
 Transform:
   m_ObjectHideFlags: 0
@@ -1029,6 +1036,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa44b6dc2001f31468a2b1e2f5eb8070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1072805149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 009f2c636e6c8884b817d6b7a0057a81,
+    type: 2}
+  m_PrefabInternal: {fileID: 1797272343}
+  m_GameObject: {fileID: 1072805144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa44b6dc2001f31468a2b1e2f5eb8070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1105812326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,7 +1071,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 1105812326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 1.75, z: 0}
+  m_LocalPosition: {x: -2.5, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -1071,6 +1090,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PossibleObjects:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
+  - {fileID: 11400000, guid: ec72bdfd8f36b4d17aa0bdbc3bea5c6c, type: 2}
+  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
+  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
+  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
+  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -1118,6 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMovement: 1
   interpolationSpeed: 4
+  dividerOfPower: 2
 --- !u!1 &1191022500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,7 +1208,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 1197895454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -1.92999995, y: .75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -1201,13 +1226,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
-  - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 11400000, guid: 1b10f74d8e0d8fd48900be181e947fc4, type: 2}
+  - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
+  - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
+  - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
-  numberOfObjectsOnLane: 10
+  numberOfObjectsOnLane: 5
   Seamless: 0
 --- !u!1 &1218547059
 GameObject:
@@ -1360,7 +1386,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 1615346048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 1.75, z: 0}
+  m_LocalPosition: {x: 2.5, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -1379,7 +1405,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PossibleObjects:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
-  - {fileID: 11400000, guid: 2be6ae77097093842a8915de48235dad, type: 2}
+  - {fileID: 11400000, guid: ec72bdfd8f36b4d17aa0bdbc3bea5c6c, type: 2}
+  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
+  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
+  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
+  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -1842,7 +1872,7 @@ Transform:
   m_PrefabInternal: {fileID: 1797272343}
   m_GameObject: {fileID: 2138059708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -1860,11 +1890,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11413622, guid: 173d06721c068804b82b13dcbcd82998, type: 2}
-  - {fileID: 11460756, guid: 79c7119f5e864b34cb25de3890dd7ba8, type: 2}
-  - {fileID: 11400000, guid: 967e99c7e77fe0e458d9abb0f00c277a, type: 2}
-  - {fileID: 11470420, guid: 5b632cc51facbab4b925995c4f67349f, type: 2}
+  - {fileID: 11400000, guid: 1b10f74d8e0d8fd48900be181e947fc4, type: 2}
+  - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
+  - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
+  - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
-  numberOfObjectsOnLane: 10
+  numberOfObjectsOnLane: 5
   Seamless: 0
