@@ -8,7 +8,7 @@ public class GrannyGUI : VRGUI
 	//public bool frenzy = false;
 	public int frenzyBlinkTimer = 200;
 	private float frenzyTimer = 0;
-
+	
 	public override void OnVRGUI()
 	{
 		float offset = (float)((100 - sliderWidth) * 0.5);
