@@ -6,6 +6,7 @@ public class Granny : MonoBehaviour {
 	
 	[SerializeField] private float xMovement;
 	[SerializeField] private float interpolationSpeed = 4f;
+	[SerializeField] private float dividerOfPower = 2.0f;
 	private float y,z;
 	private float timer;
 	private float power;
@@ -25,7 +26,7 @@ public class Granny : MonoBehaviour {
 		z = transform.position.z;
 	}
 	public static void Move(int direction, float power){
-
+		power /= s_Instance.dividerOfPower;
 		if(s_Instance.timer != -1){
 			
 			if(direction != s_Instance.prevDirection){
