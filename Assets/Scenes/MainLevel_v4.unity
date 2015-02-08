@@ -466,6 +466,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4e5f0cd66b5ec0c4ba452d3d91c7e39b, type: 3}
   - {fileID: 8300000, guid: 9055fad55930f0f49be11c67149c3202, type: 3}
   - {fileID: 8300000, guid: 25139f37ab422814c8b2774a2715624e, type: 3}
+  - {fileID: 8300000, guid: 0b0f16fbcc1674ae7b9a02cecb7f901e, type: 3}
+  - {fileID: 8300000, guid: cfb59611dbbba4c188f2ee80fd6a4a45, type: 3}
+  - {fileID: 8300000, guid: dae81d169edc14fe18994c5d9afda719, type: 3}
   tableSounds:
   - {fileID: 8300000, guid: 1da0dcd3976324aa59d6f774b78c790b, type: 3}
   - {fileID: 8300000, guid: bbde20505eead41bb9dd4bf7e08fed8b, type: 3}
@@ -475,6 +478,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 459a8776593ad3142afcb27ad51c25f1, type: 3}
   - {fileID: 8300000, guid: f9e0c55608cbce54f81e498ab809a358, type: 3}
   - {fileID: 8300000, guid: 9359180ccb1c4cf46985bb01abc8a226, type: 3}
+  - {fileID: 8300000, guid: 4760235639f0b4155a479882169fb211, type: 3}
+  - {fileID: 8300000, guid: d59e009bcdc6f4925be923eb0af45e29, type: 3}
+  - {fileID: 8300000, guid: 8abd117e65c154d67ad4cc3ea3249708, type: 3}
+  - {fileID: 8300000, guid: dff23e50f1e60499abf2152b5c683d78, type: 3}
   looseNana:
   - {fileID: 8300000, guid: c90ef63385e592643b9e3c5dd12d9b55, type: 3}
   - {fileID: 8300000, guid: 40400d7d23bdc0a498c36331b54ccaf4, type: 3}
@@ -4737,11 +4744,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
       propertyPath: slowNana.Array.size
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
       propertyPath: looseNana.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: nanaSounds.Array.size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4818,11 +4829,47 @@ Prefab:
     - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
       propertyPath: looseNana.Array.data[5]
       value: 
-      objectReference: {fileID: 8300000, guid: 40400d7d23bdc0a498c36331b54ccaf4, type: 3}
+      objectReference: {fileID: 8300000, guid: 0b0f16fbcc1674ae7b9a02cecb7f901e, type: 3}
     - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
       propertyPath: tableSounds.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 1da0dcd3976324aa59d6f774b78c790b, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: slowNana.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4760235639f0b4155a479882169fb211, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: slowNana.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e009bcdc6f4925be923eb0af45e29, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: slowNana.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8abd117e65c154d67ad4cc3ea3249708, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: slowNana.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: dff23e50f1e60499abf2152b5c683d78, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: looseNana.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: dae81d169edc14fe18994c5d9afda719, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: looseNana.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: cfb59611dbbba4c188f2ee80fd6a4a45, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: nanaSounds.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b0f16fbcc1674ae7b9a02cecb7f901e, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: nanaSounds.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: cfb59611dbbba4c188f2ee80fd6a4a45, type: 3}
+    - target: {fileID: 11400000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
+      propertyPath: nanaSounds.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: dae81d169edc14fe18994c5d9afda719, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43ad93fa60388744daf9279ab76984ce, type: 2}
   m_RootGameObject: {fileID: 193703025}
