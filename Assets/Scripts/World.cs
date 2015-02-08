@@ -100,6 +100,7 @@ public class World : MonoBehaviour {
 	}
 	public AudioSource introMusic;
 	public AudioSource themeMusic;
+	public AudioSource angryDoctor;
 	private bool frenzy;
 	private float frenzyTimer;
 
@@ -115,6 +116,7 @@ public class World : MonoBehaviour {
 	private IEnumerator ChangeSound(){
 		float c = 0;
 		themeMusic.Play();
+		angryDoctor.Play ();
 		while (c<1) {
 			c+= Time.deltaTime * .2f;
 			introMusic.volume = Mathf.Lerp(introMusic.volume,0F,c);
