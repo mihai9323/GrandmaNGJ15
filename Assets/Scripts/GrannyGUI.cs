@@ -25,7 +25,7 @@ public class GrannyGUI : VRGUI
 		if (delta < 0.25)
 			GUI.backgroundColor = Color.red;
 
-		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*15,size,50),"");
+		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*20,size,50),"");
 
 		if (World.Frenzy) {
 
