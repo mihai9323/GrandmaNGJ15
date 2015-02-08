@@ -19,7 +19,7 @@ public class ScoreGUI : VRGUI
 		string score = string.Format ("{0} {1}\n{2} {3}", "Best Combo:", World.BestCombo, "Total Score:", World.TotalScore); 
 
 		
-		if (World.MovementSpeed == 0.0f) {
+		if (World.MovementSpeed == 0.0f && World.StartGame) {
 			GUI.Box (new Rect (0,0,Screen.width,Screen.height), score);
 
 		} else {
