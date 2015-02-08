@@ -7,6 +7,8 @@ public class SoundManager : MonoBehaviour {
 	
 	public AudioClip[] pillSounds;
 	public AudioClip[] punchSounds;
+	public AudioClip[] tireScreech;
+	public AudioClip[] wheels;
 	private void Awake(){
 		s_Instance = this;
 	}
