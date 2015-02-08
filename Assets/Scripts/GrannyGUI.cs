@@ -15,7 +15,7 @@ public class GrannyGUI : VRGUI
 
 		GUI.skin = grannySkin;
 		GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
-		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*15,(Screen.width/100)*sliderWidth,50),"");
+		GUI.Box(new Rect((Screen.width/100)*offset,(Screen.height/100)*20,(Screen.width/100)*sliderWidth,50),"");
 
 		float delta = World.MovementSpeed / World.MaxSpeed;
 		float size = (Screen.width / 100) * (sliderWidth * delta);
