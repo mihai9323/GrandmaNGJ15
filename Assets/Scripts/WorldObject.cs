@@ -21,13 +21,9 @@ public class WorldObject : MonoBehaviour {
 		if(transform.position.z<0){
 			lane.SpawnObject();
 			Destroy(this.gameObject);
-		}else{
-			Bend ();
 		}
 	}
-	void Bend(){
-		renderer.material.SetVector("_QOffset", World.Bend);
-	}
+	
 	
 	
 	
