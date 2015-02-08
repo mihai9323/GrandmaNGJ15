@@ -202,7 +202,7 @@ public class World : MonoBehaviour {
 	
 	private void Update(){
 		if(!startGame){
-			if(Time.time > timeWait + 5 + Random.Range(0,2)){
+			if(Time.time > timeWait + 15 + Random.Range(0,2)){
 				timeWait = Time.time;
 				new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.slowNana),Granny._transform.position+ Vector3.back * 1.0f,4.0f,1.0f,1.0f);
 			}

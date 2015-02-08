@@ -585,8 +585,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9055fad55930f0f49be11c67149c3202, type: 3}
   - {fileID: 8300000, guid: 25139f37ab422814c8b2774a2715624e, type: 3}
   tableSounds:
-  - {fileID: 8300000, guid: a499e7f50a5f3374fb645557b01938b9, type: 3}
+  - {fileID: 8300000, guid: 1da0dcd3976324aa59d6f774b78c790b, type: 3}
   - {fileID: 8300000, guid: bbde20505eead41bb9dd4bf7e08fed8b, type: 3}
+  slowNana:
+  - {fileID: 8300000, guid: 055a4200d112e4b41a13b08efa864121, type: 3}
+  - {fileID: 8300000, guid: f3fe8042080cea34099d685db693e2ba, type: 3}
+  - {fileID: 8300000, guid: 459a8776593ad3142afcb27ad51c25f1, type: 3}
+  - {fileID: 8300000, guid: f9e0c55608cbce54f81e498ab809a358, type: 3}
+  - {fileID: 8300000, guid: 9359180ccb1c4cf46985bb01abc8a226, type: 3}
+  looseNana:
+  - {fileID: 8300000, guid: c90ef63385e592643b9e3c5dd12d9b55, type: 3}
+  - {fileID: 8300000, guid: 40400d7d23bdc0a498c36331b54ccaf4, type: 3}
+  - {fileID: 8300000, guid: 16cf9bb6f16917c4cacda5ffbb21cab7, type: 3}
+  - {fileID: 8300000, guid: ce887fcf86dc52044b68503977139902, type: 3}
+  - {fileID: 8300000, guid: 80965acf6c9964f4ab842e95923a950d, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
