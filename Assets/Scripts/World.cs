@@ -10,7 +10,7 @@ public class World : MonoBehaviour {
 	public delegate void refreshDelegate();
 	public static event refreshDelegate REFRESH;
 	
-	
+	public static int currentCombo; 
 	
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private float generationDistance;

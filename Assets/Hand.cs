@@ -21,7 +21,7 @@ public class Hand : MonoBehaviour {
 		{
 			RollState = 1;
 			RollStartTime = Time.time; 
-			Debug.Log ("lower");
+
 		}
 		if(other.gameObject.name == "UpperRollDetect")
 		{
@@ -29,9 +29,9 @@ public class Hand : MonoBehaviour {
 			{
 				RollState=0;
 				float rollTime = Time.time - RollStartTime;
-				Debug.Log("rollTime:"+rollTime);
+				
 				RollForce = 1/(0.01f+rollTime);
-				Debug.Log(this.gameObject.name+" RollForce:"+RollForce);
+				
 				if (this.gameObject.name == "LeftHand")
 				{
 					Granny.Move(1,RollForce);
