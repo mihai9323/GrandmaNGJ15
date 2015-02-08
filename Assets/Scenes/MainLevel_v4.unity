@@ -788,6 +788,7 @@ MonoBehaviour:
   gameLogo: {fileID: 2800000, guid: b57e77e137e6c44ffba74af30e21f831, type: 3}
   instruction: {fileID: 2800000, guid: ae1616cb56b97473cad8edeb2c1737c4, type: 3}
   grannySkin: {fileID: 11400000, guid: 2561e4fc23706447c84e5683ece953d3, type: 2}
+  tintSkin: {fileID: 0}
 --- !u!1 &290103032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,8 +2809,8 @@ MonoBehaviour:
   bend: {x: 2.59662557, y: 3.84965563, z: 6.9652853, w: 0}
   maxSpeed: 20
   acceleration: 0
-  minX: -1.39999998
-  maxX: 1.39999998
+  minX: -1.60000002
+  maxX: 1.60000002
   minAcc: -1
   maxAcc: 10
   frenzyTime: 5
@@ -2947,7 +2948,7 @@ Transform:
   m_PrefabInternal: {fileID: 1107680898}
   m_GameObject: {fileID: 1105812326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 2.5, z: 0}
+  m_LocalPosition: {x: -3, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -2965,16 +2966,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
+  - {fileID: 11400000, guid: 8019d7c53b2353541ae47e5248f7018e, type: 2}
+  - {fileID: 11400000, guid: 660733d80620eaf4e93d99b932f830fc, type: 2}
+  - {fileID: 11400000, guid: 77436ec270bdf3c4b8694bb96d732453, type: 2}
+  - {fileID: 11400000, guid: 7d34256cc7ba622459b33c10b188b8b7, type: 2}
+  - {fileID: 11400000, guid: 322dc366093fde6458edfa713cf849d7, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -3891,7 +3887,7 @@ Transform:
   m_PrefabInternal: {fileID: 1107680898}
   m_GameObject: {fileID: 1615346048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 2.5, z: 0}
+  m_LocalPosition: {x: 3, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072805146}
@@ -3909,16 +3905,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
+  - {fileID: 11400000, guid: 8019d7c53b2353541ae47e5248f7018e, type: 2}
+  - {fileID: 11400000, guid: 660733d80620eaf4e93d99b932f830fc, type: 2}
+  - {fileID: 11400000, guid: 77436ec270bdf3c4b8694bb96d732453, type: 2}
+  - {fileID: 11400000, guid: 7d34256cc7ba622459b33c10b188b8b7, type: 2}
+  - {fileID: 11400000, guid: 322dc366093fde6458edfa713cf849d7, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
