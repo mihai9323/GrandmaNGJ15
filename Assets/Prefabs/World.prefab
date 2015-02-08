@@ -321,6 +321,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 660733d80620eaf4e93d99b932f830fc, type: 2}
   - {fileID: 11400000, guid: 77436ec270bdf3c4b8694bb96d732453, type: 2}
   - {fileID: 11400000, guid: 7d34256cc7ba622459b33c10b188b8b7, type: 2}
+  - {fileID: 11400000, guid: c965cc9ee347e764b9e4be5d79dd4fa6, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -362,6 +363,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 660733d80620eaf4e93d99b932f830fc, type: 2}
   - {fileID: 11400000, guid: 77436ec270bdf3c4b8694bb96d732453, type: 2}
   - {fileID: 11400000, guid: 7d34256cc7ba622459b33c10b188b8b7, type: 2}
+  - {fileID: 11400000, guid: c965cc9ee347e764b9e4be5d79dd4fa6, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
