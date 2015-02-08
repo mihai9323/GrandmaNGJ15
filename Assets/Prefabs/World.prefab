@@ -249,9 +249,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
   - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
   - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
-  numberOfObjectsOnLane: 10
+  numberOfObjectsOnLane: 5
   Seamless: 0
 --- !u!114 &11400002
 MonoBehaviour:
@@ -302,6 +303,8 @@ MonoBehaviour:
   introMusic: {fileID: 0}
   themeMusic: {fileID: 0}
   frenzyMusic: {fileID: 0}
+  bornToBeWild: {fileID: 0}
+  angryDoctor: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -315,6 +318,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PossibleObjects:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
+  - {fileID: 11400000, guid: ec72bdfd8f36b4d17aa0bdbc3bea5c6c, type: 2}
+  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
+  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
+  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
+  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -335,9 +343,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
   - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
   - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
-  numberOfObjectsOnLane: 10
+  numberOfObjectsOnLane: 5
   Seamless: 0
 --- !u!114 &11400010
 MonoBehaviour:
@@ -352,7 +361,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PossibleObjects:
   - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
-  - {fileID: 11400000, guid: 2be6ae77097093842a8915de48235dad, type: 2}
+  - {fileID: 11400000, guid: ec72bdfd8f36b4d17aa0bdbc3bea5c6c, type: 2}
+  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
+  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
+  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
+  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -390,9 +403,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 163a696e15489334599ed3008cb995cb, type: 2}
   - {fileID: 11400000, guid: 6a93cab7f39c02949a910d62920519fe, type: 2}
   - {fileID: 11400000, guid: cd535c82c463ff446af3a590a78e03e4, type: 2}
+  - {fileID: 11478536, guid: 1f5bc1e029ce49d409f41b7cfa8723a1, type: 2}
   minObjDistance: 8
   maxObjDistance: 15
-  numberOfObjectsOnLane: 10
+  numberOfObjectsOnLane: 5
   Seamless: 0
 --- !u!114 &11400016
 MonoBehaviour:
