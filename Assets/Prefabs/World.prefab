@@ -317,17 +317,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
-  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
+  - {fileID: 11400000, guid: 8019d7c53b2353541ae47e5248f7018e, type: 2}
+  - {fileID: 11400000, guid: 660733d80620eaf4e93d99b932f830fc, type: 2}
+  - {fileID: 11400000, guid: 77436ec270bdf3c4b8694bb96d732453, type: 2}
+  - {fileID: 11400000, guid: 7d34256cc7ba622459b33c10b188b8b7, type: 2}
+  - {fileID: 11400000, guid: 322dc366093fde6458edfa713cf849d7, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22
@@ -365,17 +359,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleObjects:
-  - {fileID: 11400000, guid: 23fc9a5015d24de42b908565817f7bc9, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 6bb2d97391a5c4c259c3ae208e025214, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: ce311966f1e5d4504b1ea46f36361892, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: e3c7d6a5b793d43cb943c4849fb19855, type: 2}
-  - {fileID: 11400000, guid: 29adc96d447cc421b98d1ec12d9f8a62, type: 2}
-  - {fileID: 11400000, guid: 7976ade31c296d24f944ca325b4fe6fb, type: 2}
+  - {fileID: 11400000, guid: 8019d7c53b2353541ae47e5248f7018e, type: 2}
+  - {fileID: 11400000, guid: 660733d80620eaf4e93d99b932f830fc, type: 2}
+  - {fileID: 11400000, guid: 77436ec270bdf3c4b8694bb96d732453, type: 2}
+  - {fileID: 11400000, guid: 7d34256cc7ba622459b33c10b188b8b7, type: 2}
+  - {fileID: 11400000, guid: 322dc366093fde6458edfa713cf849d7, type: 2}
   minObjDistance: 10
   maxObjDistance: 10
   numberOfObjectsOnLane: 22

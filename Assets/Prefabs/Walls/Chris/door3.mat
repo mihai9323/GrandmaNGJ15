@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: door2
+  m_Name: door3
   m_Shader: {fileID: 4800000, guid: 461b14e43af42b143a870834806fe650, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -33,7 +33,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .933823526, g: .933823526, b: .933823526, a: 1}
+        second: {r: .669117689, g: .669117689, b: .669117689, a: 1}
       data:
         first:
           name: _SpecColor
