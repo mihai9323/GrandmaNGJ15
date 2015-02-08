@@ -1227,6 +1227,7 @@ GameObject:
   - 4: {fileID: 400158}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Genesis 2_35228.Shape
   m_TagString: Untagged
@@ -1259,6 +1260,7 @@ GameObject:
   - 4: {fileID: 400160}
   - 33: {fileID: 3300002}
   - 23: {fileID: 2300002}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: 073Thongs_5442.Shape
   m_TagString: Untagged
@@ -1323,6 +1325,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400174}
   - 111: {fileID: 11100000}
+  - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: femaleMedic
   m_TagString: Untagged
@@ -2453,7 +2456,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100172}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
+  m_LocalRotation: {x: 0, y: -.999030471, z: 0, w: .0440246947}
   m_LocalPosition: {x: .412999988, y: .606999993, z: 44.4949989}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2557,6 +2560,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .479999989, y: 1.76999998, z: .439999998}
   m_Center: {x: 0, y: 1.01999998, z: 0}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100174}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -2596,6 +2614,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c23a7312522c6e4abb831cf857f6b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c23a7312522c6e4abb831cf857f6b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c23a7312522c6e4abb831cf857f6b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2609,19 +2649,19 @@ SkinnedMeshRenderer:
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
   - {fileID: 2100000, guid: f177b07b82085394982f9067a2aef4c7, type: 2}
-  - {fileID: 2100000, guid: cac49d2a7786b294aae067b53dc8fb13, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
   - {fileID: 2100000, guid: dac91b6d0be649a4c8c2ebe3dbcde7ee, type: 2}
-  - {fileID: 2100000, guid: c51fa63064319884a8606fe3edb35aa6, type: 2}
-  - {fileID: 2100000, guid: c51fa63064319884a8606fe3edb35aa6, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
   - {fileID: 2100000, guid: dac91b6d0be649a4c8c2ebe3dbcde7ee, type: 2}
-  - {fileID: 2100000, guid: 997e7adc7af5b2d42ab697fda60fc731, type: 2}
-  - {fileID: 2100000, guid: dfdd0375837cc14458b889147c7bf734, type: 2}
-  - {fileID: 2100000, guid: c51fa63064319884a8606fe3edb35aa6, type: 2}
-  - {fileID: 2100000, guid: dfdd0375837cc14458b889147c7bf734, type: 2}
-  - {fileID: 2100000, guid: 507b7d1f2b520e744837889d1561b20f, type: 2}
-  - {fileID: 2100000, guid: dac91b6d0be649a4c8c2ebe3dbcde7ee, type: 2}
-  - {fileID: 2100000, guid: 278762f416aead44dbd822c9b35ec051, type: 2}
-  - {fileID: 2100000, guid: c51fa63064319884a8606fe3edb35aa6, type: 2}
+  - {fileID: 2100000, guid: f177b07b82085394982f9067a2aef4c7, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
   - {fileID: 2100000, guid: f177b07b82085394982f9067a2aef4c7, type: 2}
   - {fileID: 2100000, guid: cfcea404b518ff8468761f2947caea9d, type: 2}
   - {fileID: 2100000, guid: cfcea404b518ff8468761f2947caea9d, type: 2}
@@ -2633,9 +2673,9 @@ SkinnedMeshRenderer:
   - {fileID: 2100000, guid: cfcea404b518ff8468761f2947caea9d, type: 2}
   - {fileID: 2100000, guid: f177b07b82085394982f9067a2aef4c7, type: 2}
   - {fileID: 2100000, guid: f177b07b82085394982f9067a2aef4c7, type: 2}
-  - {fileID: 2100000, guid: 65a2a2a297da0394a89f3ccddcabc91f, type: 2}
-  - {fileID: 2100000, guid: dfdd0375837cc14458b889147c7bf734, type: 2}
-  - {fileID: 2100000, guid: dfdd0375837cc14458b889147c7bf734, type: 2}
+  - {fileID: 2100000, guid: 7f0fef9fd3f09a04bb8e8219632e797c, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
+  - {fileID: 2100000, guid: d45aefc44e6c4d245ae9df96439edb76, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
