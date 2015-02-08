@@ -96,6 +96,7 @@ public class World : MonoBehaviour {
 	public static bool StartGame{
 		set{
 			if(value != s_Instance.startGame && value){
+				s_Instance.angryDoctor.Play ();
 				
 				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.introMusic,s_Instance.themeMusic));
 			}
@@ -107,8 +108,12 @@ public class World : MonoBehaviour {
 	}
 	public AudioSource introMusic;
 	public AudioSource themeMusic;
+
 	public AudioSource frenzyMusic;
 	//public AudioSource frenzyMusicLoop;
+
+	public AudioSource angryDoctor;
+
 	private bool frenzy;
 	private float frenzyTimer;
 
@@ -123,8 +128,12 @@ public class World : MonoBehaviour {
 	}
 	private IEnumerator ChangeSound(AudioSource oldSource, AudioSource newSource){
 		float c = 0;
+
 		newSource.volume = 1;
 		newSource.Play();
+
+		
+		
 		while (c<1) {
 			c+= Time.deltaTime * .5f;
 			oldSource.volume = Mathf.Lerp(oldSource.volume,0F,c);
