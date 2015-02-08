@@ -106,6 +106,26 @@ public class World : MonoBehaviour {
 			return s_Instance.startGame;
 		}
 	}
+	public static int BestCombo{
+		set{
+			if(value>BestCombo){
+				s_Instance.bestCombo = value;
+			}
+			
+		}
+		get{
+			return s_Instance.bestCombo;
+		}
+	}
+	public static int TotalScore{
+		set{
+			s_Instance.totalScore = value;
+		}
+		get{
+			return s_Instance.totalScore;
+		}
+	}
+	
 	public AudioSource introMusic;
 	public AudioSource themeMusic;
 
@@ -113,7 +133,9 @@ public class World : MonoBehaviour {
 	//public AudioSource frenzyMusicLoop;
 	public AudioSource bornToBeWild;
 	public AudioSource angryDoctor;
-
+	private int totalScore;
+	private int bestCombo;
+	
 	private bool frenzy;
 	private float frenzyTimer;
 
