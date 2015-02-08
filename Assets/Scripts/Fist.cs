@@ -8,6 +8,7 @@ public class Fist : MonoBehaviour {
 		switch(col.collider.tag){
 			case "Pill": CollectPill(col.collider.gameObject); break;
 		    case "Doctor": DoctorPunch(col.collider.gameObject,col.contacts[0].point); break;
+		    case "Doctress": DoctressPunch(col.collider.gameObject,col.contacts[0].point); break;
 		}
 	}
 	
@@ -25,6 +26,22 @@ public class Fist : MonoBehaviour {
 		Destroy(gob,2.0f);
 		gob.GetComponent<WorldObject>().lane.SpawnObject();
 		new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.punchSounds),transform.position, 3.0f, 1.0f, Random.Range(.9f,1.5f));
+		AudioSource AS = gob.AddComponent<AudioSource>();
+		AS.clip = SoundManager.returnRandomSound(SoundManager.s_Instance.maleShout);
+		AS.pitch = Random.Range(.95f,1.1f);
+		AS.Play();
+		Debug.Log("doctor hit");
+	}
+	private void DoctressPunch(GameObject gob, Vector3 point){
+		gob.rigidbody.isKinematic = false;
+		gob.rigidbody.AddForce(Vector3.forward * 2000,ForceMode.Force);
+		Destroy(gob,2.0f);
+		gob.GetComponent<WorldObject>().lane.SpawnObject();
+		new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.punchSounds),transform.position, 3.0f, 1.0f, Random.Range(.9f,1.5f));
+		AudioSource AS = gob.AddComponent<AudioSource>();
+		AS.clip = SoundManager.returnRandomSound(SoundManager.s_Instance.femaleShout);
+		AS.pitch = Random.Range(.95f,1.1f);
+		AS.Play();
 		Debug.Log("doctor hit");
 	}
 }

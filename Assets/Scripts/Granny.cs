@@ -25,14 +25,16 @@ public class Granny : MonoBehaviour {
 		z = transform.position.z;
 	}
 	public static void Move(int direction, float power){
-        
+        Debug.Log ("MOVE");
 		if(s_Instance.timer != -1){
 			
 			if(direction != s_Instance.prevDirection){
 				World.MovementSpeed += power;
+				new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.wheels),s_Instance.transform.position, 3.0f, 1.0f, Random.Range(.9f,1.5f));
 				
 			}
 			else{
+				new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.tireScreech),s_Instance.transform.position, 3.0f, 1.0f, Random.Range(.9f,1.5f));
 				World.MovementSpeed += power;
 				Vector3 targetPos = s_Instance.transform.position + new Vector3(Mathf.Sign(direction),0,0) * s_Instance.xMovement;
 				if(targetPos.x < World.MinX){

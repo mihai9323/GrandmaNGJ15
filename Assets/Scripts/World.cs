@@ -90,14 +90,14 @@ public class World : MonoBehaviour {
 		}
 		get{
 			return s_Instance.frenzy;
-		}
+		} 
 	}
 
 	public static bool StartGame{
 		set{
 			if(value != s_Instance.startGame && value){
 				s_Instance.angryDoctor.Play ();
-				
+				s_Instance.bornToBeWild.Play();
 				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.introMusic,s_Instance.themeMusic));
 			}
 			s_Instance.startGame = value;
@@ -111,7 +111,7 @@ public class World : MonoBehaviour {
 
 	public AudioSource frenzyMusic;
 	//public AudioSource frenzyMusicLoop;
-
+	public AudioSource bornToBeWild;
 	public AudioSource angryDoctor;
 
 	private bool frenzy;
