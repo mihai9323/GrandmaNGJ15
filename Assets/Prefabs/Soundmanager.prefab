@@ -214,7 +214,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.5943375, y: 8.69053459, z: 9.5109787}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -529,13 +529,13 @@ AudioSource:
   m_GameObject: {fileID: 100012}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 9bfa7375ef4c37047877edfd826502ff, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fd185f0b641e84572bb95455efdf8a64, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 124
+  Priority: 117
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -663,7 +663,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f2060d666010e1747a5969b14525df48, type: 3}
   - {fileID: 8300000, guid: 971cc7d429a2a2843bf316d14c2f2058, type: 3}
   - {fileID: 8300000, guid: 0b5b69932cd524f43ba4772ce045308f, type: 3}
-  nanaSounds: []
+  nanaSounds:
+  - {fileID: 8300000, guid: 32d1041da5a4ea54c93cc5845c284621, type: 3}
+  - {fileID: 8300000, guid: 2948a3fe347d7994b921952c7063c075, type: 3}
+  - {fileID: 8300000, guid: 9cfe84fad6eb0a04f835a3e9cc3369e3, type: 3}
+  - {fileID: 8300000, guid: 9703571abcaa0764d8ca27769be97050, type: 3}
+  - {fileID: 8300000, guid: 4e5f0cd66b5ec0c4ba452d3d91c7e39b, type: 3}
+  - {fileID: 8300000, guid: a499e7f50a5f3374fb645557b01938b9, type: 3}
+  - {fileID: 8300000, guid: 25139f37ab422814c8b2774a2715624e, type: 3}
+  - {fileID: 8300000, guid: 9055fad55930f0f49be11c67149c3202, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
