@@ -23,6 +23,9 @@ public class World : MonoBehaviour {
 	[SerializeField] private float frenzyTime;
 	public static float MovementSpeed{
 		set{
+			if(MovementSpeed != value && value == 0){
+				StartGame = false;
+			}
 			value = Mathf.Clamp(value,0,MaxSpeed);
 			s_Instance.movementSpeed = value;
 		}
@@ -93,14 +96,19 @@ public class World : MonoBehaviour {
 		get{
 			return s_Instance.frenzy;
 		} 
+		
 	}
-
+	private float bornPlayedTime =0 ;
 	public static bool StartGame{
 		set{
 			if(value != s_Instance.startGame && value){
-				s_Instance.angryDoctor.Play ();
-				s_Instance.bornToBeWild.Play();
+				new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.looseNana),Granny._transform.position+ Vector3.back * 1.0f,4.0f,1.0f,1.0f);
+				if(Time.time>s_Instance.bornPlayedTime + 30){
+					s_Instance.bornToBeWild.Play();
+					s_Instance.bornPlayedTime = Time.time;
+					}
 				s_Instance.StartCoroutine(s_Instance.ChangeSound(s_Instance.introMusic,s_Instance.themeMusic));
+				
 			}
 			s_Instance.startGame = value;
 		}
@@ -189,6 +197,17 @@ public class World : MonoBehaviour {
 			
 			yield return new WaitForEndOfFrame();
 		}
+	}
+	float timeWait =0;
+	
+	private void Update(){
+		if(!startGame){
+			if(Time.time > timeWait + 5 + Random.Range(0,2)){
+				timeWait = Time.time;
+				new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.slowNana),Granny._transform.position+ Vector3.back * 1.0f,4.0f,1.0f,1.0f);
+			}
+		}
+		
 	}
 }
 			

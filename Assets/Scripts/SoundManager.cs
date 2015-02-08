@@ -13,6 +13,9 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip[] femaleShout;
 	public AudioClip[] nanaSounds;
 	public AudioClip[] tableSounds;
+	public AudioClip[] slowNana;
+	public AudioClip[] looseNana;
+	
 	private void Awake(){
 		s_Instance = this;
 	}
@@ -27,7 +30,7 @@ public class SoundManager : MonoBehaviour {
 	private IEnumerator NanaSound(){
 		while(true){
 			yield return new WaitForSeconds(Random.Range(10,30));
-			new AudioSourcePoint(returnRandomSound(nanaSounds),transform.position,10,1,1);
+			if(World.MovementSpeed > 3/4 * World.MaxSpeed)new AudioSourcePoint(returnRandomSound(nanaSounds),transform.position,10,1,1);
 		}
 	}
 }

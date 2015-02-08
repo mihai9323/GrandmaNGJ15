@@ -15,7 +15,7 @@ public class StopOnHit : MonoBehaviour {
 			gob.GetComponent<WorldObject>().lane.SpawnObject();
 			new AudioSourcePoint(SoundManager.returnRandomSound(SoundManager.s_Instance.tableSounds),transform.position, 3.0f, 1.0f, Random.Range(.9f,1.5f));
 			AudioSource AS = gob.AddComponent<AudioSource>();
-			AS.clip = SoundManager.returnRandomSound(SoundManager.s_Instance.nanaSounds);
+			if(World.MovementSpeed > 3/4 * World.MaxSpeed)AS.clip = SoundManager.returnRandomSound(SoundManager.s_Instance.nanaSounds);
 			AS.pitch = Random.Range(.95f,1.1f);
 			AS.Play();
 		}
