@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Floor
+  m_Name: wall2
   m_Shader: {fileID: 4800000, guid: 461b14e43af42b143a870834806fe650, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -17,14 +17,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 400426e64d77b48b5bfaad2c160fe346, type: 3}
-          m_Scale: {x: 1, y: 2}
+          m_Texture: {fileID: 2800000, guid: d4977e5a6249ed64c8c2e537751aa29a, type: 3}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .100000016
+        second: .699999988
       data:
         first:
           name: _Dist
@@ -33,7 +33,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: .941987813, b: .838235259, a: 1}
+        second: {r: .811418653, g: .985294104, b: .906150758, a: 1}
       data:
         first:
           name: _SpecColor
