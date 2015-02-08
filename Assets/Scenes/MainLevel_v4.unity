@@ -637,6 +637,7 @@ GameObject:
   - 114: {fileID: 274665097}
   - 114: {fileID: 274665099}
   - 114: {fileID: 274665101}
+  - 114: {fileID: 274665100}
   m_Layer: 0
   m_Name: LeftEyeAnchor
   m_TagString: Untagged
@@ -726,6 +727,25 @@ MonoBehaviour:
   sliderWidth: 60
   grannySkin: {fileID: 11400000, guid: 15056b9c7d5334f018ff4fa749653712, type: 2}
   frenzyBlinkTimer: 200
+--- !u!114 &274665100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 274665095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb1c10900cfa4fd68155949d5306200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiPosition: {x: 0, y: 0, z: 1}
+  guiSize: 1
+  useCurvedSurface: 1
+  acceptMouse: 0
+  acceptKeyboard: 0
+  cursorSize: 32
+  customCursor: {fileID: 0}
+  grannySkin: {fileID: 11400000, guid: 2561e4fc23706447c84e5683ece953d3, type: 2}
 --- !u!114 &274665101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2891,6 +2911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xMovement: .5
   interpolationSpeed: 4
+  dividerOfPower: 2
 --- !u!167 &1117089931
 AudioReverbZone:
   m_ObjectHideFlags: 0
